@@ -204,6 +204,11 @@ body {
 @media only screen and (min-width: 1000px) {
   .cube-img {
     position: absolute;
+    top: 25.75rem;
+    left: -11.5rem;
+    width: auto;
+    height: auto;
+    margin-left: 0;
   }
 }
 
@@ -225,6 +230,22 @@ body {
   overflow: visible;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 110rem;
+    max-width: none;
+    height: 64rem;
+    background: url(../images/bg-pattern-desktop.svg), white;
+    background-position: -72rem 68%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
 .card__img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -237,14 +258,45 @@ body {
   z-index: 5;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card__img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: auto;
+    height: auto;
+    margin-top: -1.5rem;
+    margin-left: -10.5rem;
+  }
+}
+
 .card__text-wrapper {
   padding: 9rem 3rem;
   padding-bottom: 4rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .card__text-wrapper {
+    width: 50%;
+    margin-left: auto;
+    padding: 9rem 7rem 9rem 4.5rem;
+  }
+}
+
+.card__text-wrapper::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .card__heading {
   text-align: center;
   margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card__heading {
+    text-align: start;
+  }
 }
 
 .card hr {

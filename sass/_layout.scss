@@ -1,0 +1,103 @@
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+    
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+    // background-size: 400% 400%;
+    // animation: bgGradientGlow 6s ease infinite;
+
+    @media only screen and (min-width: 1000px) {
+        padding: 0 8rem;
+    }
+}
+
+.card-cube-wrapper {
+    position: relative;
+}
+
+.cube-img {
+    position: absolute;
+    top: -5.5rem;
+    left: 50%;
+    width: 12rem;
+    height: auto;
+    margin-left: -15.5rem;
+    animation: updown 2s infinite;
+    z-index: 10;
+
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    border-radius: 3rem;
+    box-shadow: 0 5rem 5rem -10px rgba(0, 0, 0, .25);
+
+    background: url(../images/bg-pattern-mobile.svg), white;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    overflow: visible;
+
+    @media only screen and (min-width: 1000px) {
+
+    }
+
+    &__img {
+        align-self: center;
+        width: 30rem;
+        height: auto;
+        margin-top: -13.75rem;
+        animation: fadeInUp 1s;
+        z-index: 5;
+
+        @media only screen and (min-width: 1000px) {
+
+        }
+    }
+
+    &__text-wrapper {
+        padding: 9rem 3rem;
+        padding-bottom: 4rem;
+
+        @media only screen and (min-width: 1000px) {
+
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media only screen and (min-width: 1000px) {
+
+        }
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid var(--light-grayish-blue);
+    }
+}
+
+.attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%);
+    font-size: 11px;
+    line-height: 1.75rem;
+    text-align: center;
+
+    a {
+        color: var(--light-grayish-blue);
+    }
+}
